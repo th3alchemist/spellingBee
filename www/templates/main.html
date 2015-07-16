@@ -1,8 +1,10 @@
 <ion-view view-title="Main">
   <ion-content>
     <br>
+<div data-role="page" id="mainpage" data-theme="b">
+
     <form id="quizForm">
-      <input type="text" name="userAnswer" id="userAnswer" placeholder="spelling..."/>
+      <input type="text" id="userAnswer" placeholder="spelling..."/>
       <br>
   	  <span id="userButtons" style="display: inline;">
         <button data-inline="true" onClick="listenAgain()">Listen Again</button>
@@ -11,5 +13,6 @@
 		  </span>
 			<textarea cols="40" rows="8" name="answerHistory" id="answerHistory" ></textarea>
     </form>
+</div>
   </ion-content>
 </ion-view>
