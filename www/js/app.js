@@ -41,11 +41,11 @@ angular.module('spellingBee', ['ionic', 'spellingBee.controllers'])
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.main', {
+      url: '/main',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/main.html'
         }
       }
     })
