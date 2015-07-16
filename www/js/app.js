@@ -32,11 +32,11 @@ angular.module('spellingBee', ['ionic', 'spellingBee.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.home', {
-    url: '/home',
+  .state('app.logout', {
+    url: '/logout',
     views: {
       'menuContent': {
-        templateUrl: 'templates/home.html'
+        templateUrl: 'templates/logout.html'
       }
     }
   })
@@ -68,5 +68,5 @@ angular.module('spellingBee', ['ionic', 'spellingBee.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/home');
+  $urlRouterProvider.otherwise('/app/logout');
 });
