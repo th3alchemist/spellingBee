@@ -1,5 +1,15 @@
 <ion-view view-title="Main">
   <ion-content>
-    <h1>Main</h1>
+    <br>
+    <form id="quizForm">
+      <input type="text" name="userAnswer" id="userAnswer" placeholder="spelling..."/>
+      <br>
+  	  <span id="userButtons" style="display: inline;">
+        <button data-inline="true" onClick="listenAgain()">Listen Again</button>
+        <button data-inline="true" onClick="checkAnswer()">Check Answer</button>
+        <button data-inline="true" onClick="getNextWord()">Next Word</button>
+		  </span>
+			<textarea cols="40" rows="8" name="answerHistory" id="answerHistory" ></textarea>
+    </form>
   </ion-content>
 </ion-view>
